@@ -7,8 +7,10 @@ function Home() {
   return (
     <div className="">
       <div className="flex">
-        <Sidebar />
-        <div className="grid md:grid-cols-3 grid-cols-1">
+        <div className="">
+          <Sidebar />
+        </div>
+        <div className="grid md:grid-cols-3 grid-cols-1 ">
           <Feed />
           <Feed />
           <Feed />
