@@ -1,27 +1,16 @@
-import Video from "./Video";
-import Navbar from "../components/Navbar";
 import Sidebar from "../components/Sidebar";
-import { FetchApi } from "../utils/FetchApi";
 import Feed from "../components/Feed";
+import { useState } from "react";
 function Home() {
+  const [category, setCategory] = useState(0);
   return (
     <div className="">
-      <div className="flex">
+      <div className="md:flex">
         <div className="">
-          <Sidebar />
+          <Sidebar category={category} setCategory={setCategory} />
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-1 ">
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
-          <Feed />
+        <div className="">
+          <Feed category={category} />
         </div>
       </div>
     </div>

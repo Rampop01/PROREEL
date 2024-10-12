@@ -9,22 +9,24 @@ import {
   FaMicrophone,
   FaSearch,
 } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className="w-full bg-gray-600 text-white py-4 md:px-6 px-2 shadow-md">
       <div className=" mx-auto flex justify-between items-center">
         {/* Logo Section */}
-        <div className="flex items-center md:space-x-2">
-          <img
-            src={logo}
-            alt="logo"
-            className="md:h-12 md:w-12 h-6 w-6 rounded-full"
-          />
-          <span className="md:text-2xl font-semibold ">
-            PRO<span className="text-red-500">REEL</span>
-          </span>
-        </div>
-
+        <Link to="/">
+          <div className="flex items-center md:space-x-2">
+            <img
+              src={logo}
+              alt="logo"
+              className="md:h-12 md:w-12 h-6 w-6 rounded-full"
+            />
+            <span className="md:text-2xl font-semibold ">
+              PRO<span className="text-red-500">REEL</span>
+            </span>
+          </div>
+        </Link>
         {/* Search Bar Section */}
         <div className="flex items-center md:mx-4 mx-2 md:gap-4">
           <div className="flex">
