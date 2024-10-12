@@ -90,26 +90,36 @@ function PlayVideo() {
       </div>
 
       <div className="flex space-x-3">
-        <button className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600">
+        <button
+          className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600"
+          title="Like"
+        >
           <FaThumbsUp className="text-xl" />
           <span className="text-lg">
             {apiData ? value_converter(apiData.statistics.likeCount) : "0"}
           </span>
         </button>
 
-        <button className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600">
+        <button
+          className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600"
+          title="Dislike"
+        >
           <FaThumbsDown className="text-xl" />
           <span className="text-lg">0</span>
         </button>
 
-        <button className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600">
+        <button
+          className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600"
+          title="Share"
+        >
           <FaShare className="text-xl" />
-          <span className="text-lg">Share</span>
         </button>
 
-        <button className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600">
+        <button
+          className="flex items-center space-x-2 bg-gray-700 p-2 rounded-md hover:bg-gray-600"
+          title="Save"
+        >
           <FaSave className="text-xl" />
-          <span className="text-lg">Save</span>
         </button>
       </div>
 

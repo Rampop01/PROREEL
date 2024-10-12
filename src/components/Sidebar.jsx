@@ -22,7 +22,7 @@ const Sidebar = ({ category, setCategory }) => {
         className="mb-6 cursor-pointer md:flex hidden "
         onClick={() => setIsExpanded(!isExpanded)}
       >
-        <FaBars className="text-2xl" />
+        <FaBars className="text-2xl" title="harmburger" />
       </div>
 
       <ul
@@ -34,7 +34,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(0)}
         >
-          <FaHome className="text-xl" />
+          <FaHome className="text-xl" title="Home" />
           {isExpanded && <span className="text-lg hidden md:block">Home</span>}
         </li>
 
@@ -44,7 +44,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(20)}
         >
-          <FaGamepad className="text-xl" />
+          <FaGamepad className="text-xl" title="Game" />
           {isExpanded && (
             <span className="text-lg hidden md:block">Gaming</span>
           )}
@@ -56,7 +56,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(2)}
         >
-          <FaCar className="text-xl" />
+          <FaCar className="text-xl" title="Auto mobile" />
           {isExpanded && (
             <span className="text-lg hidden md:block">Automobiles</span>
           )}
@@ -70,7 +70,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(17)}
         >
-          <FaBasketballBall className="text-xl" />
+          <FaBasketballBall className="text-xl" title="Sport" />
           {isExpanded && (
             <span className="text-lg hidden md:block">Sports</span>
           )}
@@ -82,7 +82,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(24)}
         >
-          <FaFilm className="text-xl" />
+          <FaFilm className="text-xl" title="Entertainment" />
           {isExpanded && (
             <span className="text-lg hidden md:block">Entertainment</span>
           )}
@@ -94,7 +94,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(28)}
         >
-          <FaLaptopCode className="text-xl" />
+          <FaLaptopCode className="text-xl" title="Technology" />
           {isExpanded && (
             <span className="text-lg hidden md:block">Technology</span>
           )}
@@ -106,7 +106,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(10)}
         >
-          <FaMusic className="text-xl" />
+          <FaMusic className="text-xl" title="Music" />
           {isExpanded && <span className="text-lg hidden md:block">Music</span>}
         </li>
 
@@ -118,7 +118,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(22)}
         >
-          <FaBloggerB className="text-xl" />
+          <FaBloggerB className="text-xl" title="Blogs" />
           {isExpanded && <span className="text-lg hidden md:block">Blogs</span>}
         </li>
 
@@ -128,7 +128,7 @@ const Sidebar = ({ category, setCategory }) => {
           }`}
           onClick={() => setCategory(25)}
         >
-          <FaNewspaper className="text-xl" />
+          <FaNewspaper className="text-xl" title="News" />
           {isExpanded && <span className="text-lg hidden md:block">News</span>}
         </li>
 
